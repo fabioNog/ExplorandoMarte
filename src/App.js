@@ -1,19 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import AppBar from './template/appBar'
+
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import {indigo700,blueGrey800} from 'material-ui/styles/colors';
+
+// button
+import NavigationClose from 'material-ui/svg-icons/navigation/close';
+import IconButton from 'material-ui/IconButton';
+
+
+const muiTheme = getMuiTheme({
+  palette: {
+      primary1Color: indigo700,
+      accent1Color: blueGrey800,
+      
+  }
+})
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+<MuiThemeProvider muiTheme={muiTheme}>
+    <AppBar title="My AppBar"  />
+  </MuiThemeProvider>
     );
   }
 }
