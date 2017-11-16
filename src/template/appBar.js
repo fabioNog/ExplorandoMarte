@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
+import Teste0 from './component/teste0'
+
 
 
 import { List, ListItem } from 'material-ui/List';
@@ -173,11 +175,7 @@ export default class AppB extends Component {
                                 </Col>
 
                                 <Col xs={8} md={12} lg={4}  >
-
                                     <RaisedButton label="coordenada1" primary={true} style={styles.botoonStyle} type="submit" />
-                                    {/* <FloatingActionButton style={styles.botoonStyle}>
-                                <ContentAdd />
-                            </FloatingActionButton> */}
                                 </Col>
 
                             </Row>
@@ -189,49 +187,38 @@ export default class AppB extends Component {
                                 </Col>
 
                                 <Col xs={8} md={12} lg={4}  >
-
                                     <RaisedButton label="instrucoes" primary={true} style={styles.botoonStyle} type="submit=" />
-                                    {/* <FloatingActionButton style={styles.botoonStyle}>
-                                    <ContentAdd />
-                                </FloatingActionButton> */}
                                 </Col>
 
                             </Row>
 
                             <Row>
-                            <Col xs={12} md={12} lg={6} lgOffset={1} >
-                                <TextField style={styles.paper2} floatingLabelText={'Coordenadas no plano cartesiano da segunda nave:'} />
-                            </Col>
+                                <Col xs={12} md={12} lg={6} lgOffset={1} >
+                                    <TextField style={styles.paper2} floatingLabelText={'Coordenadas no plano cartesiano da segunda nave:'} />
+                                </Col>
 
-                            <Col xs={8} md={12} lg={4}  >
+                                <Col xs={8} md={12} lg={4}  >
 
-                                <RaisedButton label="coordenada2" primary={true} style={styles.botoonStyle} type="submit" />
-                                {/* <FloatingActionButton style={styles.botoonStyle}>
+                                    <RaisedButton label="coordenada2" primary={true} style={styles.botoonStyle} type="submit" />
+                                    {/* <FloatingActionButton style={styles.botoonStyle}>
                             <ContentAdd />
                         </FloatingActionButton> */}
-                            </Col>
+                                </Col>
 
-                        </Row>
-
-
-                        <Row>
-                            <Col xs={12} md={12} lg={6} lgOffset={1} >
-                                <TextField style={styles.paper2} floatingLabelText={'Instruções de navegação da nave 2:'} />
-                            </Col>
-
-                            <Col xs={8} md={12} lg={4}  >
-
-                                <RaisedButton label="instrucoes" primary={true} style={styles.botoonStyle} type="submit=" />
-                                {/* <FloatingActionButton style={styles.botoonStyle}>
-                                <ContentAdd />
-                            </FloatingActionButton> */}
-                            </Col>
-
-                        </Row>
+                            </Row>
 
 
+                            <Row>
+                                <Col xs={12} md={12} lg={6} lgOffset={1} >
+                                    <TextField style={styles.paper2} floatingLabelText={'Instruções de navegação da nave 2:'} />
+                                </Col>
 
+                                <Col xs={8} md={12} lg={4}  >
+                                    <RaisedButton label="instrucoes" primary={true} style={styles.botoonStyle} type="submit=" />
+                                </Col>
+                            </Row>
                         </Grid>
+
                     </form>
                 </div>
             </div>

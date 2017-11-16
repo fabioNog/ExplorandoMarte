@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 import AppBar from './template/appBar'
+import Teste1 from './template/component/teste0'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
