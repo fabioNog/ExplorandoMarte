@@ -1,24 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 import App from './App';
+
+// React e Redux
 import registerServiceWorker from './registerServiceWorker';
-import { combineReducers, createStore } from 'redux';
+import {createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 // Testando o Field
-// import counterReducer from './TesteRedux/counterReducer'
-// import Counter from './TesteRedux/counter'
-
-// const reducers = combineReducers({
-//      counter: counterReducer 
-// })
+ import reducers from './main/reducers'
+ 
+ const store = createStore(reducers)
 
 ReactDOM.render(
-    // <Provider store={createStore(reducers)}>
-    //     <Counter />
-    // </Provider>, document.getElementById('root'));
-    <App/>,document.getElementById('root'));
+    <Provider store={store}>
+        <App />
+    </Provider>, document.getElementById('root'));
+
         
 
 registerServiceWorker();
