@@ -17,7 +17,7 @@ public class Area {
     Area(){
         x = 0;
         y = 0;
-        
+       
     }
     
     Area(int X,int Y){
@@ -44,11 +44,19 @@ public class Area {
         this.y = Y;
     }
     
-   public int getXNave(){
-       return n.getX();
-   }
-   
-   public int getYNave(){
-       return n.getX();
-   }
+    public nave getNave(){
+        return n;
+    }
+//    
+//   public int getXNave(){
+//       return n.getX();
+//   }
+//   
+//   public int getYNave(){
+//       return n.getX();
+//   }
+//   
+//   public String getDirNave(){
+//       return n.getDir();
+//   }
 }

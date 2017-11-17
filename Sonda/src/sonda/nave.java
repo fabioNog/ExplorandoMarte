@@ -37,7 +37,7 @@ public class nave{
         return this.dir;
     }
     
-    void setNome(int X){
+    void setX(int X){
         this.x = X;
     }
     
@@ -45,7 +45,7 @@ public class nave{
         this.y = Y;
     }
     
-    void setAcelerar(String D){
+    void setDir(String D){
         this.dir = D;
     }
     
