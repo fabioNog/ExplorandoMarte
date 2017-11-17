@@ -12,15 +12,6 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 const styles = {
 
-    paper: {
-        padding: 30,
-        minHeight: 160,
-        marginBottom: 15,
-        opacity: 0.7,
-        borderLeft: '6px solid red',
-        // backgroundColor: 'blue',
-
-    },
 
     paper2: {
         width: '100%',
@@ -33,20 +24,6 @@ const styles = {
         borderRadius: '10px',
         // opacity: 0.7,
 
-    },
-    checkbox: {
-        marginBottom: 16,
-    },
-    divider: {
-        marginBottom: 20,
-    },
-
-
-    header: {
-        fontWeight: 500,
-        fontSize: '1.6em',
-        paddingBottom: 15,
-        color: 'rgba(0, 0, 0, 0.541176)',
     },
 
     botoonStyle: {
@@ -85,7 +62,6 @@ const styles = {
     }
 };
 
-
 export default class Form extends Component {
     
     
@@ -100,7 +76,7 @@ export default class Form extends Component {
     
         render() {
             return (
-                <div>    
+                <div>                       
                     <div >
                         <form onSubmit={(e) => this._sendForm(e)} method="post">
                             <Grid fluid style={styles.gridStyle}>
@@ -150,7 +126,7 @@ export default class Form extends Component {
                                     </Col>
     
                                     <Col xs={8} md={12} lg={4}  >
-                                        <RaisedButton label="instrucoes" primary={true} style={styles.botoonStyle} type="submit=" />
+                                        <RaisedButton label="instrucoes" primary={true} style={styles.botoonStyle} type="submit" />
                                     </Col>
     
                                 </Row>

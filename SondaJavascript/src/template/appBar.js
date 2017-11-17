@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
 import Form from '../todo/todoForm'
+
+// import Nave from './component/nave'
+// import Matrix from './component/matrix'
+
 export default class AppB extends Component {
-
-
 
 
     render() {
@@ -13,6 +15,7 @@ export default class AppB extends Component {
                     title="Sonda"
                 />
                 <Form/>
+                {/* <Matrix/> */}
             </div>
         )
     }
