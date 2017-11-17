@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "sonda",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,10 +26,12 @@
     "react-dom": "^16.0.0",
     "react-flexbox-grid": "^1.1.5",
     "react-grid-system": "^3.0.7",
+    "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-routing": "0.0.7",
     "react-scripts": "1.0.14",
-    "reactstrap": "^5.0.0-alpha.3"
+    "reactstrap": "^5.0.0-alpha.3",
+    "redux": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",

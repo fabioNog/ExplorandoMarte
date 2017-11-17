@@ -1,25 +1,14 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
-import Drawer from 'material-ui/Drawer';
-import Teste0 from './component/teste0'
 
-
-
-import { List, ListItem } from 'material-ui/List';
 import TextField from 'material-ui/TextField';
 
 // Grid Row e Colunas
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 // Botões
-import FloatingActionButton from 'material-ui/FloatingActionButton';
-import ContentAdd from 'material-ui/svg-icons/content/add';
+
 import RaisedButton from 'material-ui/RaisedButton';
-import FlatButton from 'material-ui/FlatButton';
-
-import { indigo700, blueGrey800 } from 'material-ui/styles/colors';
-
-import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 
 const styles = {
 
@@ -99,16 +88,7 @@ const styles = {
 
 
 export default class AppB extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { drawerOpened: false };
-    }
 
-    _toogleDrawer() {
-        this.setState({
-            drawerOpened: !this.state.drawerOpened
-        });
-    }
 
     _sendForm(e) {
         e.preventDefault();
@@ -127,13 +107,6 @@ export default class AppB extends Component {
                     onLeftIconButtonTouchTap={() => this._toogleDrawer()}
                 />
 
-                {/* 
-                <Drawer open={this.state.drawerOpened} docked={false} onRequestChange={() => this._toogleDrawer()}>
-                    <List>
-                        <ListItem>Quem somos</ListItem>
-                        <ListItem>Trabalhe Conosco</ListItem>
-                    </List>
-                </Drawer> */}
 
                 <div >
                     <form onSubmit={(e) => this._sendForm(e)} method="post">
@@ -155,15 +128,12 @@ export default class AppB extends Component {
 
                             <Row>
                                 <Col xs={12} md={12} lg={6} lgOffset={1} >
-                                    <TextField style={styles.paper2} floatingLabelText={'Coordenadas do canto superior a direita:'} />
+                                    <TextField style={styles.paper2} floatingLabelText={'Coordenadas do canto superior a direita:'}  />
                                 </Col>
 
                                 <Col xs={8} md={12} lg={4}  >
 
                                     <RaisedButton label="Superior" primary={true} style={styles.botoonStyle} type="submit" />
-                                    {/* <FloatingActionButton style={styles.botoonStyle}>
-                                    <ContentAdd />
-                                </FloatingActionButton> */}
                                 </Col>
 
                             </Row>
@@ -200,9 +170,6 @@ export default class AppB extends Component {
                                 <Col xs={8} md={12} lg={4}  >
 
                                     <RaisedButton label="coordenada2" primary={true} style={styles.botoonStyle} type="submit" />
-                                    {/* <FloatingActionButton style={styles.botoonStyle}>
-                            <ContentAdd />
-                        </FloatingActionButton> */}
                                 </Col>
 
                             </Row>
@@ -218,6 +185,7 @@ export default class AppB extends Component {
                                 </Col>
                             </Row>
                         </Grid>
+                        
 
                     </form>
                 </div>
