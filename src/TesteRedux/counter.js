@@ -6,8 +6,8 @@ import { inc, dec, stepChanged } from './counterActions'
 
 const Counter = (props) => (
     <div>
-        <h1>{props.counter.stepChanged}</h1>
-        <input onChange={props.dec} type='number' />
+        <h1>{props.counter.number}</h1>
+        <input onChange={props.stepChanged}></input>
         <button onClick={props.dec}>Dec</button>
         <button onClick={props.inc}>Inc</button>
     </div>
