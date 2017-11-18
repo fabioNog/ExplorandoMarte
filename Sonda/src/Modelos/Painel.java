@@ -16,6 +16,9 @@ public class Painel extends JPanel {
         Desenhar d;
         for(int i=0;i<v.size();i++){
             d = (Desenhar)v.get(i);
+            d.Desenhar(g);
         }
+        
+        
     }
 }
