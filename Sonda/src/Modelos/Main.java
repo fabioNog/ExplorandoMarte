@@ -1,18 +1,12 @@
 
 package Modelos;
 import Modelos.*;
+import java.awt.Color;
 import java.util.ArrayList;
 
 import java.util.Scanner;
-import sonda.Retangulo;
-import sonda.nave;
 
 
-
-/**
- *
- * @author fabio
- */
 public class Main {
 
     /**
@@ -28,6 +22,15 @@ public class Main {
         NJanela.add(NPainel);
         NJanela.setSize(500,400);
         NJanela.setVisible(true);
+        Coordenada cor1 = new Coordenada(100,400);
+        Coordenada cor2 = new Coordenada(250,530);
+        Coordenada cor3 = new Coordenada(200,200);
+        
+        
+
+        
+        NaveGrafico nave = new NaveGrafico(cor1,cor2,cor3,Color.red);
+        A1.add(nave);
         
         Scanner entrar = new Scanner(System.in);
         

@@ -18,7 +18,7 @@ public class Janela extends JFrame implements WindowListener{
         super(title);
         setSize(500,500);
         addWindowListener(this);
-        setBackground(Color.yellow);
+        setBackground(Color.white);
     }
 
     @Override

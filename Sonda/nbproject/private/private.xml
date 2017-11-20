@@ -3,9 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/fabio/NetBeansProjects/Sonda/src/sonda/Main.java</file>
             <file>file:/home/fabio/NetBeansProjects/Sonda/src/Modelos/Painel.java</file>
-            <file>file:/home/fabio/NetBeansProjects/Sonda/src/Modelos/Desenhar.java</file>
+            <file>file:/home/fabio/NetBeansProjects/Sonda/src/Modelos/Main.java</file>
+            <file>file:/home/fabio/NetBeansProjects/Sonda/src/Modelos/Nave.java</file>
         </group>
     </open-files>
 </project-private>
